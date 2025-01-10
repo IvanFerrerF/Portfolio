@@ -37,3 +37,30 @@ h2 {
     color: rgb(255, 255, 255);
     margin-top: 40px;
 }
+
+.card-metal {
+    background: linear-gradient(145deg, #98989c, #4c4d4a, #acaaaa);
+    background-size: 200% 200%;
+    animation: gradientAnimation 4s ease infinite;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animación para el efecto metalizado dinámico */
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Opcional: bordes redondeados en las imágenes */
+  .card img {
+    border-radius: 10px;
+  }
+  
