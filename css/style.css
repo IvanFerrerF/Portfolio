@@ -20,15 +20,16 @@ body {
 
 h1 {
   background: black;
-  font-size: 200px;
+  font-size: 100px;
   text-align: center;
   font-weight: 600;
   mix-blend-mode: multiply;
+  font-family: sans-serif;
 }
 
 @media (min-width: 700px) {
   h1 {
-    font-size: 150px;
+    font-size: 100px;
   }
 }
 
@@ -36,6 +37,22 @@ figure img {
   height: 257px;
   width: 195;
 }
+
+/* Efecto de flotación suave */
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Definición de la animación */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial y final */
+  }
+  50% {
+    transform: translateY(-10px); /* Sube ligeramente */
+  }
+}
+
 
 h2 {
   color: rgb(255, 255, 255);
