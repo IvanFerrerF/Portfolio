@@ -25,9 +25,6 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link text-white" href="#Acerca">Sobre mi</a>
               </li>
               <li class="nav-item">
@@ -35,9 +32,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#Tecnologias">Tecnologías</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#Articulos">Artículos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#Contacto">Contacto</a>
@@ -92,7 +86,34 @@
       </section>
       <!--sobre mi fin-->
 
-      <!--Proyectos-->
+      <!-- Redes sociales y botón de currículum -->
+      <div class="text-center mt-5">
+        <!-- Iconos sociales -->
+        <div class="d-flex justify-content-center gap-4">
+          <a href="https://wa.me/34606697545" target="_blank" class="social-icon">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://github.com/IvanFerrerF" target="_blank" class="social-icon">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/tu-usuario/" target="_blank" class="social-icon">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="mailto:ivanferrerf1984@gmail.com" class="social-icon">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+
+        <!-- Botón para descargar el currículum -->
+        <div class="mt-4">
+          <a href="./cv/IvanFerrerCV.pdf" download class="btn btn-primary btn-download">
+            Descargar Currículum
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Proyectos -->
       <section class="proyectos container-fluid p-5 bg-black text-white">
         <h2 class="text-primary text-center pb-4" id="Proyectos">&lt;Proyectos/&gt;</h2>
         <p class="text-center mb-5">
@@ -103,10 +124,10 @@
         </p>
         <div class="row justify-content-center">
           <!-- Proyecto 1 -->
-          <div class="col-12 mb-4">
+          <a href="https://github.com/IvanFerrerF/DondeEstaMiCoche" target="_blank"
+            class="col-12 mb-4 text-decoration-none">
             <div class="card card-metal bg-dark text-white h-100 p-3">
               <div class="row g-0">
-                <!-- Imagen horizontal y texto -->
                 <div class="col-lg-8 col-12 d-flex flex-column">
                   <figure class="mb-3">
                     <img src="./img/DEMC_horizontal.png" alt="Imagen Horizontal Proyecto 1" class="img-fluid rounded">
@@ -116,8 +137,8 @@
                     <p class="card-text">
                       Aplicación móvil diseñada para ayudar a los usuarios a guardar la ubicación exacta de su coche,
                       establecer recordatorios de tiempo de estacionamiento y obtener indicaciones para regresar al
-                      vehículo. Además, incluye funcionalidades como integración con Google Maps y la posibilidad de añadir
-                      notas o fotos del aparcamiento.
+                      vehículo. Además, incluye funcionalidades como integración con Google Maps y la posibilidad de
+                      añadir notas o fotos del aparcamiento.
                     </p>
                     <div class="stack">
                       <span class="badge bg-secondary">Android</span>
@@ -127,25 +148,28 @@
                     </div>
                   </div>
                 </div>
-                <!-- Imagen vertical -->
                 <div class="col-lg-4 col-12 d-flex justify-content-center align-items-center">
-                  <img src="./img/img_DEMC.png" alt="Imagen Vertical Proyecto 1" class="img-fluid rounded" style="object-fit: cover;">
+                  <img src="./img/img_DEMC.png" alt="Imagen Vertical Proyecto 1" class="img-fluid rounded"
+                    style="object-fit: cover;">
                 </div>
               </div>
             </div>
-          </div>
-      
+          </a>
+
           <!-- Proyecto 2 -->
-          <div class="col-lg-6 col-12 mb-4">
+          <a href="https://github.com/IvanFerrerF/linkTracker" target="_blank"
+            class="col-lg-6 col-12 mb-4 text-decoration-none">
             <div class="card card-metal bg-dark text-white h-100 p-3">
               <figure class="text-center mb-3">
-                <img src="./img/img_linktracker.png" alt="Proyecto LinkTracker" class="img-fluid rounded" style="object-fit: cover;">
+                <img src="./img/img_linktracker.png" alt="Proyecto LinkTracker" class="img-fluid rounded"
+                  style="object-fit: cover;">
               </figure>
               <div class="card-body">
                 <h4 class="card-title text-primary">LinkTracker</h4>
                 <p class="card-text">
                   Aplicación desarrollada en JavaFX que permite cargar archivos de texto con URLs de páginas web,
-                  procesar múltiples hilos concurrentes y recopilar los enlaces contenidos en esas páginas. La aplicación utiliza
+                  procesar múltiples hilos concurrentes y recopilar los enlaces contenidos en esas páginas. La
+                  aplicación utiliza
                   un diseño intuitivo con ListViews para mostrar las páginas procesadas y los enlaces encontrados.
                 </p>
                 <div class="stack">
@@ -156,181 +180,221 @@
                 </div>
               </div>
             </div>
-          </div>
-          
-          <!-- Proyecto 3 -->
-<div class="col-lg-6 col-12 mb-4">
-  <div class="card card-metal bg-dark text-white h-100 p-3">
-    <figure class="text-center mb-3">
-      <img src="./img/img_flightfx.png" alt="FlightsFX" class="img-fluid rounded" style="object-fit: cover;">
-    </figure>
-    <div class="card-body">
-      <h4 class="card-title text-primary">FlightsFX</h4>
-      <p class="card-text">
-        FlightsFX es una aplicación desarrollada en JavaFX diseñada para gestionar una lista de vuelos de un aeropuerto. 
-        Los usuarios pueden cargar vuelos desde un archivo de texto, añadir nuevos vuelos, eliminarlos, y aplicar diferentes 
-        filtros como vuelos largos, próximos 5 vuelos, y vuelos a un destino seleccionado. 
-      </p>
-      <div class="stack">
-        <span class="badge bg-secondary">Java</span>
-        <span class="badge bg-secondary">JavaFX</span>
-        <span class="badge bg-secondary">FXML</span>
-        <span class="badge bg-secondary">Streams</span>
-        <span class="badge bg-secondary">File I/O</span>
-      </div>
-    </div>
-  </div>
-</div>
+          </a>
 
+          <!-- Proyecto 3 -->
+          <a href="https://github.com/IvanFerrerF/FlightsFX" target="_blank"
+            class="col-lg-6 col-12 mb-4 text-decoration-none">
+            <div class="card card-metal bg-dark text-white h-100 p-3">
+              <figure class="text-center mb-3">
+                <img src="./img/img_flightfx.png" alt="FlightsFX" class="img-fluid rounded" style="object-fit: cover;">
+              </figure>
+              <div class="card-body">
+                <h4 class="card-title text-primary">FlightsFX</h4>
+                <p class="card-text">
+                  FlightsFX es una aplicación desarrollada en JavaFX diseñada para gestionar una lista de vuelos de un
+                  aeropuerto. Los usuarios pueden cargar vuelos desde un archivo de texto, añadir nuevos vuelos,
+                  eliminarlos, y aplicar diferentes filtros como vuelos largos, próximos 5 vuelos, y vuelos a un destino
+                  seleccionado.
+                </p>
+                <div class="stack">
+                  <span class="badge bg-secondary">Java</span>
+                  <span class="badge bg-secondary">JavaFX</span>
+                  <span class="badge bg-secondary">FXML</span>
+                  <span class="badge bg-secondary">Streams</span>
+                  <span class="badge bg-secondary">File I/O</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </section>
-      
-      
+
+
+
       <!--Proyectos fin-->
 
       <!-- Tecnologías -->
-<section class="container-fluid p-5 bg-black text-white">
-  <h2 class="text-primary text-center pb-4" id="Tecnologias">&lt;Tecnologías/&gt;</h2>
-  <p class="text-center mb-5">
-    Durante mi formación en desarrollo de software, he adquirido experiencia en diversas tecnologías que me capacitan para crear aplicaciones completas, escalables y orientadas a satisfacer las necesidades del usuario.
-  </p>
-  <div class="row justify-content-center">
-    <!-- Frontend -->
-    <div class="col-lg-4 col-md-6 col-12 mb-4">
-      <div class="card card-metal text-white h-100 p-3">
-        <h4 class="text-primary text-center">Frontend</h4>
-        <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-          <div class="text-center">
-            <img src="./img/html5-icon.png" alt="HTML5" class="icon">
-            <p class="mt-1">HTML5</p>
+      <section class="container-fluid p-5 bg-black text-white">
+        <h2 class="text-primary text-center pb-4" id="Tecnologias">&lt;Tecnologías/&gt;</h2>
+        <p class="text-center mb-5">
+          Durante mi formación en desarrollo de software, he adquirido experiencia en diversas tecnologías que me
+          capacitan para crear aplicaciones completas, escalables y orientadas a satisfacer las necesidades del usuario.
+        </p>
+        <div class="row justify-content-center">
+          <!-- Frontend -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card card-metal text-white h-100 p-3">
+              <h4 class="text-primary text-center">Frontend</h4>
+              <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <div class="text-center">
+                  <img src="./img/html5-icon.png" alt="HTML5" class="icon">
+                  <p class="mt-1">HTML5</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/css3-icon.png" alt="CSS" class="icon">
+                  <p class="mt-1">CSS</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/bootstrap-icon.png" alt="Bootstrap" class="icon">
+                  <p class="mt-1">Bootstrap</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/figma-icon.png" alt="Figma" class="icon">
+                  <p class="mt-1">Figma</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text-center">
-            <img src="./img/css3-icon.png" alt="CSS" class="icon">
-            <p class="mt-1">CSS</p>
+
+          <!-- Backend -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card card-metal text-white h-100 p-3">
+              <h4 class="text-primary text-center">Backend</h4>
+              <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <div class="text-center">
+                  <img src="./img/xml-icon.png" alt="XML" class="icon">
+                  <p class="mt-1">XML</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/java-icon.png" alt="Java" class="icon">
+                  <p class="mt-1">Java</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/kotlin-icon.png" alt="Kotlin" class="icon">
+                  <p class="mt-1">Kotlin</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/csharp-icon.png" alt="Csharp" class="icon">
+                  <p class="mt-1">C#</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/php-icon.png" alt="Php" class="icon">
+                  <p class="mt-1">PHP</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/nodejs-icon.png" alt="Node" class="icon">
+                  <p class="mt-1">NodeJS</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/mongodb-icon.png" alt="MongoDB" class="icon">
+                  <p class="mt-1">MongoDB</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/mysql-icon.png" alt="MySQL" class="icon">
+                  <p class="mt-1">MySQL</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/laravel-icon.png" alt="Laravel" class="icon">
+                  <p class="mt-1">Laravel</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text-center">
-            <img src="./img/bootstrap-icon.png" alt="Bootstrap" class="icon">
-            <p class="mt-1">Bootstrap</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/figma-icon.png" alt="Figma" class="icon">
-            <p class="mt-1">Figma</p>
+
+          <!-- Herramientas -->
+          <div class="col-lg-4 col-md-6 col-12 mb-4">
+            <div class="card card-metal text-white h-100 p-3">
+              <h4 class="text-primary text-center">Herramientas</h4>
+              <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <div class="text-center">
+                  <img src="./img/net-icon.png" alt=".Net" class="icon">
+                  <p class="mt-1">.Net Maui</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/javafx-icon.png" alt="JavaFX" class="icon">
+                  <p class="mt-1">JavaFX</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/git-icon.png" alt="Git" class="icon">
+                  <p class="mt-1">Git</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/github-icon.png" alt="GitHub" class="icon">
+                  <p class="mt-1">GitHub</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/intellij-icon.png" alt="IntelliJ" class="icon">
+                  <p class="mt-1">IntelliJ</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/code-icon.png" alt="Code" class="icon">
+                  <p class="mt-1">VS Code</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/vs-icon.png" alt="VisualStudio" class="icon">
+                  <p class="mt-1">Visual Studio</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/androidstudio-icon.png" alt="AndroidStudio" class="icon">
+                  <p class="mt-1">Android Studio</p>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Backend -->
-    <div class="col-lg-4 col-md-6 col-12 mb-4">
-      <div class="card card-metal text-white h-100 p-3">
-        <h4 class="text-primary text-center">Backend</h4>
-        <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-          <div class="text-center">
-            <img src="./img/xml-icon.png" alt="XML" class="icon">
-            <p class="mt-1">XML</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/java-icon.png" alt="Java" class="icon">
-            <p class="mt-1">Java</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/kotlin-icon.png" alt="Kotlin" class="icon">
-            <p class="mt-1">Kotlin</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/csharp-icon.png" alt="Csharp" class="icon">
-            <p class="mt-1">C#</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/php-icon.png" alt="Php" class="icon">
-            <p class="mt-1">PHP</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/nodejs-icon.png" alt="Node" class="icon">
-            <p class="mt-1">NodeJS</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/mongodb-icon.png" alt="MongoDB" class="icon">
-            <p class="mt-1">MongoDB</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/mysql-icon.png" alt="MySQL" class="icon">
-            <p class="mt-1">MySQL</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/laravel-icon.png" alt="Laravel" class="icon">
-            <p class="mt-1">Laravel</p>
+        <div class="row justify-content-center">
+          <!-- Aprendiendo -->
+          <div class="col-lg-6 col-12 mb-4">
+            <div class="card card-metal text-white h-100 p-3">
+              <h4 class="text-primary text-center">Aprendiendo</h4>
+              <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
+                <div class="text-center">
+                  <img src="./img/docker-icon.png" alt="Docker" class="icon">
+                  <p class="mt-1">Docker</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/jetpack-icono.png" alt="Jetpack" class="icon icon-wide">
+                  <p class="mt-1">Jetpack Compose</p>
+                </div>
+                <div class="text-center">
+                  <img src="./img/multiplatform-icon.png" alt="Multiplatform" class="icon">
+                  <p class="mt-1">Kotlin Multiplatform</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!-- Herramientas -->
-    <div class="col-lg-4 col-md-6 col-12 mb-4">
-      <div class="card card-metal text-white h-100 p-3">
-        <h4 class="text-primary text-center">Herramientas</h4>
-        <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-          <div class="text-center">
-            <img src="./img/net-icon.png" alt=".Net" class="icon">
-            <p class="mt-1">.Net Maui</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/javafx-icon.png" alt="JavaFX" class="icon">
-            <p class="mt-1">JavaFX</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/git-icon.png" alt="Git" class="icon">
-            <p class="mt-1">Git</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/intellij-icon.png" alt="IntelliJ" class="icon">
-            <p class="mt-1">IntelliJ</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/code-icon.png" alt="Code" class="icon">
-            <p class="mt-1">VS Code</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/vs-icon.png" alt="VisualStudio" class="icon">
-            <p class="mt-1">Visual Studio</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/androidstudio-icon.png" alt="AndroidStudio" class="icon">
-            <p class="mt-1">Android Studio</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/virtualbox-icon.png" alt="Virtual Box" class="icon">
-            <p class="mt-1">Virtual Box</p>
+
+      <footer class="bg-black text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+          <!-- Lista de navegación -->
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Acerca">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#Tecnologias">Tecnologías</a>
+            </li>
+          </ul>
+
+          <!-- Iconos sociales -->
+          <div class="social-icons d-flex gap-3" id="Contacto">
+            <a href="https://wa.me/34606697545" target="_blank" class="text-white">
+              <i class="bi bi-whatsapp fs-4"></i>
+            </a>
+            <a href="https://github.com/IvanFerrerF" target="_blank" class="text-white">
+              <i class="bi bi-github fs-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/tu-usuario/" target="_blank" class="text-white">
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+            <a href="mailto:ivanferrerf1984@gmail.com" class="text-white">
+              <i class="bi bi-envelope fs-4"></i>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-center">
-    <!-- Aprendiendo -->
-    <div class="col-lg-6 col-12 mb-4">
-      <div class="card card-metal text-white h-100 p-3">
-        <h4 class="text-primary text-center">Aprendiendo</h4>
-        <div class="d-flex flex-wrap justify-content-center gap-3 mt-3">
-          <div class="text-center">
-            <img src="./img/docker-icon.png" alt="Docker" class="icon">
-            <p class="mt-1">Docker</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/jetpack-icono.png" alt="Jetpack" class="icon icon-wide">
-            <p class="mt-1">Jetpack Compose</p>
-          </div>
-          <div class="text-center">
-            <img src="./img/multiplatform-icon.png" alt="Multiplatform" class="icon">
-            <p class="mt-1">Kotlin Multiplatform</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
+      </footer>
 
 
 

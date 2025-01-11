@@ -1,106 +1,223 @@
-body{
-    background-color: black;
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.titulo{
-    position: relative;
+
+.titulo {
+  position: relative;
 
 }
-.titulo video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+.titulo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 h1 {
-    background: black;
-    font-size: 200px;
-    text-align: center;
-    font-weight: 600;
-    mix-blend-mode: multiply;
+  background: black;
+  font-size: 200px;
+  text-align: center;
+  font-weight: 600;
+  mix-blend-mode: multiply;
 }
 
 @media (min-width: 700px) {
-    h1 {
-        font-size: 150px;
-    }
+  h1 {
+    font-size: 150px;
+  }
 }
-figure img{
-    height: 257px;
-    width: 195;
+
+figure img {
+  height: 257px;
+  width: 195;
 }
 
 h2 {
-    color: rgb(255, 255, 255);
-    margin-top: 40px;
+  color: rgb(255, 255, 255);
+  margin-top: 40px;
 }
 
 .card-metal {
-    background: linear-gradient(145deg, #98989c, #4c4d4a, #acaaaa);
-    background-size: 200% 200%;
-    animation: gradientAnimation 4s ease infinite;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  /* Animación para el efecto metalizado dinámico */
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  /* Opcional: bordes redondeados en las imágenes */
-  .card img {
-    border-radius: 10px;
-  }
-  
-  .card {
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
-  }
-  
-  .bi {
-    font-size: 2rem;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .bi:hover {
-    transform: scale(1.2);
-  }
-  
-  .icon {
-    width: 48px; /* Tamaño fijo para los íconos */
-    height: 48px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  }
-  
-  .icon:hover {
-    transform: scale(1.2); /* Aumenta el tamaño en el hover */
-    box-shadow: 0 4px 10px rgba(30, 10, 211, 0.7); /* Brillo leve en hover */
-    cursor: pointer;
+  background: linear-gradient(145deg, #98989c, #4c4d4a, #acaaaa);
+  background-size: 200% 200%;
+  animation: gradientAnimation 4s ease infinite;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Animación para el efecto metalizado dinámico */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
   }
 
-  .icon-wide {
-    width: 64px;
-    height: 48px; /* Mantiene la altura uniforme */
-    object-fit: cover; /* Asegura que la imagen no se distorsione */
+  50% {
+    background-position: 100% 50%;
   }
-  
-  
-  
-  
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Opcional: bordes redondeados en las imágenes */
+.card img {
+  border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.bi {
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.bi:hover {
+  transform: scale(1.2);
+}
+
+.icon {
+  width: 48px;
+  /* Tamaño fijo para los íconos */
+  height: 48px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  /* Aumenta el tamaño en el hover */
+  box-shadow: 0 4px 10px rgba(30, 10, 211, 0.7);
+  /* Brillo leve en hover */
+  cursor: pointer;
+}
+
+.icon-wide {
+  width: 64px;
+  height: 48px;
+  /* Mantiene la altura uniforme */
+  object-fit: cover;
+  /* Asegura que la imagen no se distorsione */
+}
+
+footer {
+  border-top: 1px solid #4c4d4a;
+  /* Línea divisoria */
+}
+
+footer .nav-link {
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+footer .nav-link:hover {
+  color: #00bfff;
+  /* Cambia el color al pasar el mouse */
+}
+
+.social-icons i {
+  transition: transform 0.3s, color 0.3s ease;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+  /* Agranda el icono al pasar el mouse */
+  color: #00bfff;
+  /* Cambia el color al pasar el mouse */
+}
+
+/* Estilo para los iconos sociales */
+.social-icon {
+  font-size: 3.5rem; /* Tamaño grande */
+  color: #ffffff; /* Color inicial */
+  display: inline-block; /* Limita el área del hover */
+  border-radius: 50%; /* Hace el icono redondeado */
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.social-icon:hover {
+  transform: scale(1.5); /* Crece al pasar el mouse */
+  color: #00bfff; /* Cambia a un azul brillante */
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.8), 
+               0 0 20px rgba(0, 191, 255, 0.6); /* Brillo adaptado */
+}
+
+
+/* Estilo para el botón de currículum */
+.btn-download {
+  font-size: 1.5rem; /* Tamaño del texto */
+  font-weight: bold; /* Negrita */
+  padding: 1rem 2rem; /* Espaciado interno */
+  background: linear-gradient(145deg, #4c4d4a, #98989c); /* Gradiente inicial */
+  border: none; /* Sin borde */
+  color: #ffffff; /* Color del texto */
+  border-radius: 50px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra inicial */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease; /* Transiciones suaves */
+}
+
+.btn-download:hover {
+  animation: shakeGrow 0.8s ease-in-out; /* Llama a la animación de agitación */
+  background: linear-gradient(145deg, #ff7f50, #ff4500); /* Cambia a un gradiente cálido */
+  color: #ffffff; /* Asegura el color blanco del texto */
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.8); /* Efecto de luz cálida */
+}
+
+/* Animación de agitar y crecer */
+@keyframes shakeGrow {
+  0%, 100% {
+    transform: scale(1); /* Tamaño normal */
+  }
+  25% {
+    transform: scale(1.1) rotate(-5deg); /* Crece y gira a la izquierda */
+  }
+  50% {
+    transform: scale(1.1) rotate(5deg); /* Crece y gira a la derecha */
+  }
+  75% {
+    transform: scale(1.1) rotate(-3deg); /* Regresa a la izquierda */
+  }
+}
+
+/* Estilo para los enlaces del navbar */
+.nav-link {
+  position: relative; /* Necesario para el subrayado */
+  color: #ffffff; /* Color inicial del texto */
+  text-decoration: none; /* Sin subrayado por defecto */
+  transition: color 0.3s ease; /* Transición suave del color */
+}
+
+/* Efecto hover en los enlaces */
+.nav-link:hover {
+  color: #00bfff; /* Cambia el color al azul brillante */
+}
+
+/* Línea animada debajo del enlace al hacer hover */
+.nav-link::after {
+  content: ""; /* Línea decorativa */
+  position: absolute; /* Posición relativa al enlace */
+  bottom: -5px; /* Ubicación debajo del texto */
+  left: 0; /* Comienza desde la izquierda */
+  width: 0%; /* Comienza invisible */
+  height: 2px; /* Grosor de la línea */
+  background-color: #00bfff; /* Color de la línea */
+  transition: width 0.3s ease; /* Animación de expansión */
+}
+
+/* Expande la línea al pasar el ratón */
+.nav-link:hover::after {
+  width: 100%; /* Expande a todo el ancho del enlace */
+}
+
