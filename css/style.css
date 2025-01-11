@@ -45,11 +45,16 @@ figure img {
 
 /* Definición de la animación */
 @keyframes float {
-  0%, 100% {
-    transform: translateY(0); /* Posición inicial y final */
+
+  0%,
+  100% {
+    transform: translateY(0);
+    /* Posición inicial y final */
   }
+
   50% {
-    transform: translateY(-10px); /* Sube ligeramente */
+    transform: translateY(-10px);
+    /* Sube ligeramente */
   }
 }
 
@@ -116,9 +121,7 @@ h2 {
 .icon:hover {
   transform: scale(1.2);
   /* Aumenta el tamaño en el hover */
-  box-shadow: 0 4px 10px rgba(30, 10, 211, 0.7);
-  /* Brillo leve en hover */
-  cursor: pointer;
+  
 }
 
 .icon-wide {
@@ -157,84 +160,127 @@ footer .nav-link:hover {
 
 /* Estilo para los iconos sociales */
 .social-icon {
-  font-size: 3.5rem; /* Tamaño grande */
-  color: #ffffff; /* Color inicial */
-  display: inline-block; /* Limita el área del hover */
-  border-radius: 50%; /* Hace el icono redondeado */
-  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Transiciones suaves */
+  font-size: 3.5rem;
+  /* Tamaño grande */
+  color: #ffffff;
+  /* Color inicial */
+  display: inline-block;
+  /* Limita el área del hover */
+  border-radius: 50%;
+  /* Hace el icono redondeado */
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  /* Transiciones suaves */
 }
 
 .social-icon:hover {
-  transform: scale(1.5); /* Crece al pasar el mouse */
-  color: #00bfff; /* Cambia a un azul brillante */
-  text-shadow: 0 0 10px rgba(0, 191, 255, 0.8), 
-               0 0 20px rgba(0, 191, 255, 0.6); /* Brillo adaptado */
+  transform: scale(1.5);
+  /* Crece al pasar el mouse */
+  color: #00bfff;
+  /* Cambia a un azul brillante */
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.8),
+    0 0 20px rgba(0, 191, 255, 0.6);
+  /* Brillo adaptado */
 }
 
 
 /* Estilo para el botón de currículum */
 .btn-download {
-  font-size: 1.5rem; /* Tamaño del texto */
-  font-weight: bold; /* Negrita */
-  padding: 1rem 2rem; /* Espaciado interno */
-  background: linear-gradient(145deg, #4c4d4a, #98989c); /* Gradiente inicial */
-  border: none; /* Sin borde */
-  color: #ffffff; /* Color del texto */
-  border-radius: 50px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra inicial */
-  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease; /* Transiciones suaves */
+  font-size: 1.5rem;
+  /* Tamaño del texto */
+  font-weight: bold;
+  /* Negrita */
+  padding: 1rem 2rem;
+  /* Espaciado interno */
+  background: linear-gradient(145deg, #4c4d4a, #98989c);
+  /* Gradiente inicial */
+  border: none;
+  /* Sin borde */
+  color: #ffffff;
+  /* Color del texto */
+  border-radius: 50px;
+  /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* Sombra inicial */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  /* Transiciones suaves */
 }
 
 .btn-download:hover {
-  animation: shakeGrow 0.8s ease-in-out; /* Llama a la animación de agitación */
-  background: linear-gradient(145deg, #ff7f50, #ff4500); /* Cambia a un gradiente cálido */
-  color: #ffffff; /* Asegura el color blanco del texto */
-  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.8); /* Efecto de luz cálida */
+  animation: shakeGrow 0.8s ease-in-out;
+  /* Llama a la animación de agitación */
+  background: linear-gradient(145deg, #ff7f50, #ff4500);
+  /* Cambia a un gradiente cálido */
+  color: #ffffff;
+  /* Asegura el color blanco del texto */
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.8);
+  /* Efecto de luz cálida */
 }
 
 /* Animación de agitar y crecer */
 @keyframes shakeGrow {
-  0%, 100% {
-    transform: scale(1); /* Tamaño normal */
+
+  0%,
+  100% {
+    transform: scale(1);
+    /* Tamaño normal */
   }
+
   25% {
-    transform: scale(1.1) rotate(-5deg); /* Crece y gira a la izquierda */
+    transform: scale(1.1) rotate(-5deg);
+    /* Crece y gira a la izquierda */
   }
+
   50% {
-    transform: scale(1.1) rotate(5deg); /* Crece y gira a la derecha */
+    transform: scale(1.1) rotate(5deg);
+    /* Crece y gira a la derecha */
   }
+
   75% {
-    transform: scale(1.1) rotate(-3deg); /* Regresa a la izquierda */
+    transform: scale(1.1) rotate(-3deg);
+    /* Regresa a la izquierda */
   }
 }
 
 /* Estilo para los enlaces del navbar */
 .nav-link {
-  position: relative; /* Necesario para el subrayado */
-  color: #ffffff; /* Color inicial del texto */
-  text-decoration: none; /* Sin subrayado por defecto */
-  transition: color 0.3s ease; /* Transición suave del color */
+  position: relative;
+  /* Necesario para el subrayado */
+  color: #ffffff;
+  /* Color inicial del texto */
+  text-decoration: none;
+  /* Sin subrayado por defecto */
+  transition: color 0.3s ease;
+  /* Transición suave del color */
 }
 
 /* Efecto hover en los enlaces */
 .nav-link:hover {
-  color: #00bfff; /* Cambia el color al azul brillante */
+  color: #00bfff;
+  /* Cambia el color al azul brillante */
 }
 
 /* Línea animada debajo del enlace al hacer hover */
 .nav-link::after {
-  content: ""; /* Línea decorativa */
-  position: absolute; /* Posición relativa al enlace */
-  bottom: -5px; /* Ubicación debajo del texto */
-  left: 0; /* Comienza desde la izquierda */
-  width: 0%; /* Comienza invisible */
-  height: 2px; /* Grosor de la línea */
-  background-color: #00bfff; /* Color de la línea */
-  transition: width 0.3s ease; /* Animación de expansión */
+  content: "";
+  /* Línea decorativa */
+  position: absolute;
+  /* Posición relativa al enlace */
+  bottom: -5px;
+  /* Ubicación debajo del texto */
+  left: 0;
+  /* Comienza desde la izquierda */
+  width: 0%;
+  /* Comienza invisible */
+  height: 2px;
+  /* Grosor de la línea */
+  background-color: #00bfff;
+  /* Color de la línea */
+  transition: width 0.3s ease;
+  /* Animación de expansión */
 }
 
 /* Expande la línea al pasar el ratón */
 .nav-link:hover::after {
-  width: 100%; /* Expande a todo el ancho del enlace */
+  width: 100%;
+  /* Expande a todo el ancho del enlace */
 }
-
