@@ -64,3 +64,43 @@ h2 {
     border-radius: 10px;
   }
   
+  .card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  }
+  
+  .bi {
+    font-size: 2rem;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .bi:hover {
+    transform: scale(1.2);
+  }
+  
+  .icon {
+    width: 48px; /* Tamaño fijo para los íconos */
+    height: 48px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2); /* Aumenta el tamaño en el hover */
+    box-shadow: 0 4px 10px rgba(30, 10, 211, 0.7); /* Brillo leve en hover */
+    cursor: pointer;
+  }
+
+  .icon-wide {
+    width: 64px;
+    height: 48px; /* Mantiene la altura uniforme */
+    object-fit: cover; /* Asegura que la imagen no se distorsione */
+  }
+  
+  
+  
+  
