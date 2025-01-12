@@ -64,6 +64,20 @@ h2 {
   margin-top: 40px;
 }
 
+#Acerca {
+  text-align: left; /* Alineado a la izquierda por defecto */
+  margin-left: 75px;
+}
+
+@media (max-width: 992px) {
+  #Acerca {
+    text-align: center; /* Centrado en pantallas medianas y pequeñas */
+    margin-left: 0px;
+  }
+}
+
+
+
 .card-metal {
   background: linear-gradient(145deg, #98989c, #4c4d4a, #acaaaa);
   background-size: 200% 200%;
