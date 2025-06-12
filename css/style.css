@@ -308,3 +308,83 @@ footer .nav-link:hover {
   left: 0;
   z-index: -1; /* Clave para ponerlo detrás de todo */
 }
+
+/* --- Estilos ACTUALIZADOS para Tarjeta Metálica con Borde Animado --- */
+
+.experience-card-container {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    /* Añadimos una sombra para darle más profundidad */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* El pseudo-elemento que crea el gradiente giratorio (el borde) */
+.experience-card-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: 0;
+    background: conic-gradient(
+        transparent,
+        rgba(0, 191, 255, 1), /* Borde más sólido */
+        transparent 25%
+    );
+    animation: rotate-border 4s linear infinite;
+}
+
+/* La "máscara" que ahora es el fondo metálico */
+.experience-card-container::after {
+    content: '';
+    position: absolute;
+    inset: 3px; /* Grosor del borde */
+    border-radius: 10px;
+    z-index: 1;
+    
+    /* Aplicamos aquí el estilo metálico de tus otras tarjetas */
+    background: linear-gradient(145deg, #98989c, #4c4d4a, #acaaaa);
+    background-size: 200% 200%;
+    /* Usamos la animación de gradiente que ya tienes definida en tu CSS */
+    animation: gradientAnimation 4s ease infinite; 
+}
+
+/* El contenido, que se pone sobre el fondo metálico */
+.experience-card-content {
+    display: flex;
+    align-items: center;
+    background: transparent; /* El fondo lo pone el ::after */
+    padding: 1.5rem;
+    position: relative;
+    z-index: 2; /* Por encima de todo */
+}
+
+/* La animación que hace girar el borde (sin cambios) */
+@keyframes rotate-border {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* --- Estilos para el Modal y la Tarjeta Clicable --- */
+
+/* Hace que la tarjeta del proyecto parezca un enlace */
+.project-card-link {
+    cursor: pointer;
+}
+
+/* Estilos para que el modal se vea bien en tema oscuro */
+.modal-content {
+    background-color: #212529; /* Fondo oscuro para el modal */
+    color: white;
+    border: 1px solid #4c4d4a;
+}
+
+.modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%); /* Hace la 'X' de cerrar blanca */
+}
