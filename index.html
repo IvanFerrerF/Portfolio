@@ -9,6 +9,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -510,7 +511,9 @@
 
   </div>
 
-
+  </div> <a href="#" id="scrollTopBtn" title="Volver arriba">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -592,6 +595,34 @@
       "retina_detect": true
     });
   </script>
+
+  <script>
+        // Obtener el botón
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+        // Cuando el usuario hace scroll, se ejecuta esta función
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            // Si el scroll vertical es mayor a 300px, muestra el botón
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        }
+
+        // Cuando el usuario hace clic en el botón, va arriba de todo suavemente
+        scrollTopBtn.addEventListener("click", function(e) {
+            e.preventDefault(); // Previene el comportamiento por defecto del enlace '#'
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // ¡La magia del scroll suave!
+            });
+        });
+    </script>
 
   <!-- Modal 360planet -->
 
@@ -698,12 +729,12 @@
             <div class="tab-pane fade" id="tab-android" role="tabpanel" aria-labelledby="android-tab" tabindex="0">
               <div id="carouselAndroid" class="carousel slide carousel-fixed-height mt-3">
                 <div class="carousel-inner">
-                  <div class="carousel-item  active"><img src="./img/360planet/androidApp/kmm11.gif" class="d-block mx-auto"
-                      style="max-height: 500px; width: auto;" alt="Android 11"></div>
+                  <div class="carousel-item  active"><img src="./img/360planet/androidApp/kmm11.gif"
+                      class="d-block mx-auto" style="max-height: 500px; width: auto;" alt="Android 11"></div>
                   <div class="carousel-item"><img src="./img/360planet/androidApp/kmm12.gif" class="d-block mx-auto"
                       style="max-height: 500px; width: auto;" alt="Android 12"></div>
-                  <div class="carousel-item"><img src="./img/360planet/androidApp/kmm1.png"
-                      class="d-block mx-auto" style="max-height: 500px; width: auto;" alt="Android 1"></div>
+                  <div class="carousel-item"><img src="./img/360planet/androidApp/kmm1.png" class="d-block mx-auto"
+                      style="max-height: 500px; width: auto;" alt="Android 1"></div>
                   <div class="carousel-item"><img src="./img/360planet/androidApp/kmm2.png" class="d-block mx-auto"
                       style="max-height: 500px; width: auto;" alt="Android 2"></div>
                   <div class="carousel-item"><img src="./img/360planet/androidApp/kmm3.png" class="d-block mx-auto"
@@ -722,7 +753,7 @@
                       style="max-height: 500px; width: auto;" alt="Android 9"></div>
                   <div class="carousel-item"><img src="./img/360planet/androidApp/kmm10.png" class="d-block mx-auto"
                       style="max-height: 500px; width: auto;" alt="Android 10"></div>
-                  
+
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselAndroid"
                   data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
