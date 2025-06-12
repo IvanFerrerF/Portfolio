@@ -178,8 +178,10 @@
                     <p class="card-text">
                       Plataforma integral desarrollada desde cero para la gestión y envío masivo de mensajes de
                       WhatsApp, orientada a clínicas y empresas. Incluye paneles web de administración y cliente
-                      avanzados, así como aplicaciones móviles multiplataforma (<b>Kotlin Multiplatform Mobile</b> para
-                      Android/iOS), permitiendo gestionar usuarios, compras y facturación.
+                      avanzados, así como aplicaciones móviles, utilizando <b>Kotlin Multiplatform (KMM)</b> para
+                      compartir la lógica de negocio y desarrollando las interfaces de usuario nativas con <b>Jetpack
+                        Compose</b> en Android Studio para <b>Android</b>, y con <b>SwiftUI</b> en Xcode para
+                      <b>iOS</b>, permitiendo gestionar usuarios, compras y facturación.
                       <br><br>
                       Integra pagos seguros mediante <b>Stripe</b> y <b>PayPal</b>, generación y descarga automática de
                       <b>facturas en PDF</b> personalizadas, autenticación de usuarios y exportación de datos en CSV. El
@@ -597,32 +599,32 @@
   </script>
 
   <script>
-        // Obtener el botón
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
+    // Obtener el botón
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-        // Cuando el usuario hace scroll, se ejecuta esta función
-        window.onscroll = function() {
-            scrollFunction();
-        };
+    // Cuando el usuario hace scroll, se ejecuta esta función
+    window.onscroll = function () {
+      scrollFunction();
+    };
 
-        function scrollFunction() {
-            // Si el scroll vertical es mayor a 300px, muestra el botón
-            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-                scrollTopBtn.classList.add("show");
-            } else {
-                scrollTopBtn.classList.remove("show");
-            }
-        }
+    function scrollFunction() {
+      // Si el scroll vertical es mayor a 300px, muestra el botón
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollTopBtn.classList.add("show");
+      } else {
+        scrollTopBtn.classList.remove("show");
+      }
+    }
 
-        // Cuando el usuario hace clic en el botón, va arriba de todo suavemente
-        scrollTopBtn.addEventListener("click", function(e) {
-            e.preventDefault(); // Previene el comportamiento por defecto del enlace '#'
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // ¡La magia del scroll suave!
-            });
-        });
-    </script>
+    // Cuando el usuario hace clic en el botón, va arriba de todo suavemente
+    scrollTopBtn.addEventListener("click", function (e) {
+      e.preventDefault(); // Previene el comportamiento por defecto del enlace '#'
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // ¡La magia del scroll suave!
+      });
+    });
+  </script>
 
   <!-- Modal 360planet -->
 
