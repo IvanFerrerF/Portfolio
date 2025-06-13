@@ -497,33 +497,54 @@ footer .nav-link:hover {
     transform: translateY(0);
 }
 
-/* Modales: corrección responsive para móviles */
 @media (max-width: 576px) {
+  /* El modal ocupa toda la pantalla */
   .modal-xl {
-    --bs-modal-width: 98vw !important; /* Modal casi a pantalla completa en móvil */
+    --bs-modal-width: 100vw !important;
     margin: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
-  .carousel-fixed-height {
-    height: 40vh !important;    /* Menor altura en móvil, prueba valores: 35-45vh */
-    min-height: 200px;          /* Opcional, nunca más pequeño que esto */
-    max-height: 60vw;           /* Ajusta si quieres aún menos alto */
-    padding: 0.5rem 0;          /* Algo de espacio interior */
-  }
-  .carousel-fixed-height img {
-    max-width: 96vw;
-    max-height: 36vh;           /* Siempre un pelín más pequeño que el carrusel */
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    margin: auto;
-    border-radius: 12px;
-    display: block;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  .modal-content {
+    min-height: 100vh;
+    height: 100vh;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .modal-body {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 0.5rem;
-    overflow-y: auto;           /* Permite hacer scroll si el modal crece mucho */
-    max-height: 65vh;
+    overflow: hidden; /* ¡Ojo! Evita scroll */
+  }
+  /* Carrusel y su imagen ocupan siempre máximo el viewport */
+  .carousel-fixed-height {
+    height: 45vh !important;
+    max-height: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: transparent;
+  }
+  .carousel-fixed-height img,
+  .carousel-fixed-height video {
+    max-width: 95vw;
+    max-height: 42vh;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
   }
 }
