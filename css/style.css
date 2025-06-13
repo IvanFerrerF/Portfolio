@@ -497,3 +497,33 @@ footer .nav-link:hover {
     transform: translateY(0);
 }
 
+/* Modales: corrección responsive para móviles */
+@media (max-width: 576px) {
+  .modal-xl {
+    --bs-modal-width: 98vw !important; /* Modal casi a pantalla completa en móvil */
+    margin: 0 !important;
+  }
+
+  .carousel-fixed-height {
+    height: 40vh !important;    /* Menor altura en móvil, prueba valores: 35-45vh */
+    min-height: 200px;          /* Opcional, nunca más pequeño que esto */
+    max-height: 60vw;           /* Ajusta si quieres aún menos alto */
+    padding: 0.5rem 0;          /* Algo de espacio interior */
+  }
+  .carousel-fixed-height img {
+    max-width: 96vw;
+    max-height: 36vh;           /* Siempre un pelín más pequeño que el carrusel */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  }
+  .modal-body {
+    padding: 1rem 0.5rem;
+    overflow-y: auto;           /* Permite hacer scroll si el modal crece mucho */
+    max-height: 65vh;
+  }
+}
