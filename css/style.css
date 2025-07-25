@@ -313,7 +313,7 @@ footer .nav-link:hover {
 
 /* --- Estilos ACTUALIZADOS para Tarjeta Metálica con Borde Animado --- */
 
-.experience-card-container {
+.animated-card-container {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
@@ -322,7 +322,7 @@ footer .nav-link:hover {
 }
 
 /* El pseudo-elemento que crea el gradiente giratorio (el borde) */
-.experience-card-container::before {
+.animated-card-container::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -339,7 +339,7 @@ footer .nav-link:hover {
 }
 
 /* La "máscara" que ahora es el fondo metálico */
-.experience-card-container::after {
+.animated-card-container::after {
     content: '';
     position: absolute;
     inset: 3px; /* Grosor del borde */
@@ -354,7 +354,7 @@ footer .nav-link:hover {
 }
 
 /* El contenido, que se pone sobre el fondo metálico */
-.experience-card-content {
+.animated-card-content {
     display: flex;
     align-items: center;
     background: transparent; /* El fondo lo pone el ::after */
